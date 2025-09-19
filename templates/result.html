@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Time</title>
+</head>
+<body>
+    <h1>You said the time is {{ user_time }}</h1>
+    <p>Is this correct?</p>
+    <form action="/confirm" method="post">
+        <input type="hidden" name="time" value="{{ user_time }}">
+        <button type="submit" name="confirmation" value="yes">Yes</button>
+        <button type="submit" name="confirmation" value="no">No</button>
+    </form>
+</body>
+</html>

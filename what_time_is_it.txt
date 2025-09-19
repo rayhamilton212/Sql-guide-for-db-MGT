@@ -1,0 +1,9 @@
+1. BEGIN
+2.   OUTPUT "What time is it?"
+3.   WAIT for user to provide input.
+4.   INPUT user_time
+5.   STORE the user's input in a variable called `time_response`.
+6.   OUTPUT "You entered: " + `time_response`
+7.   OUTPUT "Is the time you entered correct? (yes/no)"
+8.   INPUT user_confirmation
+9. END
